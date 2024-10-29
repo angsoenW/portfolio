@@ -1,0 +1,67 @@
+body {
+  background-color: rgb(35, 53, 32);
+  color: white;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+#ingredients {
+  background-color: white;
+  color: black;
+  margin: 5px;
+  padding: 20px;
+  backdrop-filter: blur(5px);
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+nav {
+  display: flex;
+  justify-content: end;
+  gap: 30px;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+}
+
+nav a:hover {
+  background-color: rgb(137, 170, 137);
+}
+
+h1 {
+  font-size: 30px;
+}
+
+#logout{
+  background-color: red;
+}
+
+@media (max-width: 1200px) {
+
+  body {
+    font-size: 15px;
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+
+  nav {
+    gap: 20px;
+  }
+}
+
+@media (max-width: 800px) {
+  body {
+    font-size: 12px;
+    margin-left: 5px;
+    margin-right: 5px;
+  }
+
+  nav {
+    gap: 10px;
+  }
+}
