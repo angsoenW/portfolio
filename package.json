@@ -4,7 +4,7 @@
   "version": "0.0.0",
   "private": true,
   "scripts": {
-    "start": "node ./bin/www.mjs"
+    "start": "node ./bin/www.cjs"
   },
   "dependencies": {
     "debug": "~2.6.9",

@@ -3,8 +3,8 @@
 /**
  * Module dependencies.
  */
-import debug from 'debug';
-import http from 'http';
+var debug = require('debug')('null');
+var http = require('http');
 
 (async () => {
   const app = await (await import('../app.js')).default;
