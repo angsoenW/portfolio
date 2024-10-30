@@ -14,10 +14,6 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 app.use(express.static(path.join(__dirname, 'public')));
 
-// app.use((req, res, next) =>{
-//     next();
-// })
-
 app.use('/api/v1', apiv1Router);
 
 export default app;
