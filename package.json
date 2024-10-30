@@ -12,14 +12,13 @@
     "express": "^4.19.2",
     "install": "^0.13.0",
     "morgan": "~1.9.1",
-    "node-fetch": "^3.3.2",
+    "node-fetch": "^2.6.1",
     "npm": "^10.4.0",
     "path": "^0.12.7"
   },
   "description": "personal portfolio",
   "main": "app.js",
-  "devDependencies": {},
-   "repository": {
+  "repository": {
     "type": "git",
     "url": "git+https://github.com/angsoenW/portfolio.git"
   },
