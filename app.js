@@ -10,7 +10,6 @@ const __dirname = dirname(__filename);
 
 var app = express();
 
-app.enable('trust proxy')
 app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 app.use(express.static(path.join(__dirname, 'public')));

@@ -7,32 +7,26 @@
     "start": "node ./bin/www.cjs"
   },
   "dependencies": {
-    "cookie-parser": "~1.4.4",
     "debug": "~2.6.9",
     "dotenv": "^16.4.5",
     "express": "^4.19.2",
-    "express-session": "^1.18.0",
     "install": "^0.13.0",
-    "localStorage": "^1.0.4",
-    "mongoose": "^8.1.2",
     "morgan": "~1.9.1",
-    "msal-node-wrapper": "https://gitpkg.now.sh/kylethayer/ms-identity-javascript-nodejs-tutorial-msal-node-v2-/Common/msal-node-wrapper?main",
     "node-fetch": "^3.3.2",
-    "node-html-parser": "^6.1.12",
     "npm": "^10.4.0",
     "path": "^0.12.7"
   },
-  "description": "How might college students efficiently utilize their existing kitchen ingredients to create diverse and healthy meals, so that they can reduce food waste?",
+  "description": "personal portfolio",
   "main": "app.js",
   "devDependencies": {},
-  "repository": {
+   "repository": {
     "type": "git",
-    "url": "git+https://github.com/angsoenW/INFO_490_Capstone.git"
+    "url": "git+https://github.com/angsoenW/portfolio.git"
   },
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/angsoenW/INFO_490_Capstone/issues"
+    "url": "https://github.com/angsoenW/portfolio/issues"
   },
-  "homepage": "https://github.com/angsoenW/INFO_490_Capstone#readme"
+  "homepage": "https://github.com/angsoenW/portfolio#readme"
 }
