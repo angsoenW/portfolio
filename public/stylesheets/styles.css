@@ -5,9 +5,6 @@
     box-sizing: border-box;
 }
 
-/* Font for Pixel Game Style */
-@import url('https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400..700&family=Raleway:wght@300&display=swap');
-
 body {
     font-family: "Chakra Petch", sans-serif;
     font-optical-sizing: auto;
