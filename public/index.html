@@ -5,6 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Portfolio of Shuoheng Wang, aspiring computer scientist focused on game development and software engineering.">
     <title>Shuoheng Wang | Portfolio</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/ScrollTrigger.min.js"></script>
+    <script src="./javascripts/index.js"></script>
     <link rel="stylesheet" href="./stylesheets/styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -28,16 +31,16 @@
     <!-- Home Section -->
     <section id="home" class="hero-section">
         <div class="hero-content">
-            <h1>Shuoheng Wang</h1>
-            <p>Aspiring Computer Scientist with a Focus on Game Development and Software Engineering</p>
+            <h1 data-animate="zoom">Shuoheng Wang</h1>
+            <p data-animate="fade">Aspiring Computer Scientist with a Focus on Game Development and Software Engineering</p>
             <a href="#projects" class="cta-button">Explore My Work</a>
         </div>
     </section>
 
     <!-- About Section -->
     <section id="about" class="about-section">
-        <h2>About Me</h2>
-        <p>I am a computer science professional with a passion for game development and inclusive technology. My experience spans software engineering, game preservation, and research on emerging technologies.</p>
+        <h2 data-animate="fade">About Me</h2>
+        <p data-animate="slide">I am a computer science professional with a passion for game development and inclusive technology. My experience spans software engineering, game preservation, and research on emerging technologies.</p>
     </section>
 
     <!-- Experience Section -->
@@ -57,15 +60,11 @@
 
     <!-- Projects Section -->
     <section id="projects" class="projects-section">
-        <h2>Projects</h2>
-        <div class="project">
-            <h3>Bearly There</h3>
-            <p>A game developed in Godot, focusing on environmental storytelling and grizzly bear habitat conservation.</p>
-        </div>
-        <div class="project">
-            <h3>SpeakPerfect</h3>
-            <p>An iOS app designed to help non-native speakers improve English pronunciation through conversation simulations.</p>
-        </div>
+        <h2 data-animate="fade">Projects</h2>
+        <ul class="projects-list">
+            <li data-animate="zoom"><a href="/projects/bearly-there">Bearly There</a></li>
+            <!-- Other projects here -->
+        </ul>
     </section>
 
     <!-- Skills Section -->
