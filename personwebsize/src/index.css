@@ -1,11 +1,31 @@
-/* 确保 html 和 body 也占据 100% 的高度和宽度 */
 html, body {
     height: 100%;
-    margin: 0; /* 去掉默认的边距 */
+    margin: 0; 
+    font-family: 'Courier New', Courier, monospace; 
+    background-color: #0D0D0D; 
+    background-image: url("./image/background.png"); 
+    background-size: cover; 
+    background-position: center; 
+    background-repeat: repeat; 
+    color: #F0E68C; 
+    font-family: "Chakra Petch", sans-serif !important;
+    font-optical-sizing: auto !important;
+    font-weight: 300 !important;
+    font-style: normal !important;
 }
 
-/* 设置 #root 占据整个页面 */
 #root {
     height: 100%;
     width: 100%;
+}
+
+* {
+    box-sizing: border-box; 
+}
+
+.centered {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
 }

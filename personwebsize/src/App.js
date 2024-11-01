@@ -1,14 +1,21 @@
 import React from 'react';
 import Head from './components/head/head';
 import Content from './components/content/content';
-import Footer from './components/footer/fotter'; // 引入 Footer 组件
+import Footer from './components/footer/footer'; 
 
 function App() {
+    const fontFamily = {
+        fontFamily: '"Chakra Petch", sans-serif',  
+        fontOpticalSizing: 'auto',
+        fontWeight: 300,
+        fontStyle: 'normal'
+    }
     return (
         <>
-            <Head />
-            <Content />
-            <Footer />  {/* 添加 Footer 组件 */}
+            <Head/>
+            <Content fontFamily={fontFamily}/>
+            <Footer fontFamily={fontFamily}/>  
+            
         </>
     );
 }

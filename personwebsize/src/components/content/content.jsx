@@ -1,31 +1,74 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { Typography } from 'antd';
 
 const { Title, Paragraph } = Typography;
 
-const contentStyle = {
-    width: '90%',
-    margin: '20px auto',
-    padding: '10px',
-    border: '2px solid #3C9DB2',
-    backgroundColor: '#5E7C16',
-    boxShadow: '3px 3px 0 #8E8E86',
-    color: '#A36E2B',
-    fontFamily: 'monospace',
-    fontSize: '16px',
+// 背景色和图片
+const backgroundStyle = {
+    backgroundSize: 'cover', // 使背景图覆盖整个容器
+    backgroundPosition: 'center', // 背景图居中
+    padding: '50px 20px',
+    textAlign: 'center', // 文本居中
+    height: '100vh', // 使容器填满整个视口高度
 };
 
-const Content = () => {
+// 卡片样式
+const cardStyle = {
+    backgroundColor: 'rgba(255, 255, 255, 0.8)', // 半透明白色背景
+    borderRadius: '10px', // 圆角
+    padding: '20px',
+    margin: '10px auto',
+    maxWidth: '80%', // 最大宽度
+    boxShadow: '0 4px 15px rgba(0, 0, 0, 0.2)', // 阴影效果
+};
+
+
+
+const titleStyle = {
+    color: '#003366',          // 深蓝色文本
+    margin: '0 0 10px',
+    fontFamily: '"Chakra Petch", sans-serif',  
+    fontOpticalSizing: 'auto',
+    fontWeight: 300,
+    fontStyle: 'normal'
+};
+
+
+const paragraphStyle = {
+    color: 'rgba(0, 51, 102, 0.8)', 
+    margin: '0 0 10px', 
+};
+
+// 链接样式
+const linkStyle = {
+    color: '#FFA500', // 强调色：橙色
+    textDecoration: 'none',
+};
+
+const Content = ({fontFamily}) => {
+
     return (
-        <div style={contentStyle}>
-            <Title level={2} style={{ color: '#73C2FB', textShadow: '1px 1px #8E8E86', margin: 0 }}>
-                关于海獺
-            </Title>
-            <Paragraph style={{ color: '#A36E2B' }}>
-                海獺是一种非常可爱的海洋生物，喜欢在水中嬉戏。
-                它们以海胆和鱼类为食，是生态系统的重要一部分。
-                海獺不仅外形可爱，还有着非常聪明的智力和社交能力。
-            </Paragraph>
+        <div style={backgroundStyle}>
+            <div className='111' style={cardStyle}>
+                <Title level={1} style={titleStyle}>
+                    Hi! I am Suyanqa
+                </Title>
+                <Paragraph style={{ ...paragraphStyle, ...fontFamily }}>
+                    🌱 I’m currently learning and expanding my skills in Spring Boot and React to build robust and efficient web applications.
+                </Paragraph>
+                <Paragraph style={{ ...paragraphStyle, ...fontFamily }}>
+                    💞️ I’m looking to collaborate on projects involving Spring Boot or React development.
+                </Paragraph>
+                <Paragraph style={{ ...paragraphStyle, ...fontFamily }}>
+                    📫 You can reach me at <a href="mailto:suyan1254088@gmail.com" style={linkStyle}>suyan1254088@gmail.com</a>.
+                </Paragraph>
+                <Paragraph style={{ ...paragraphStyle, ...fontFamily }}>
+                    😄 Pronouns: ABC (Always Be Coding)
+                </Paragraph>
+                <Paragraph style={{ ...paragraphStyle, ...fontFamily }}>
+                    ⚡ Fun fact: I like to communicate with people, so that we can all gain experience from communication.
+                </Paragraph>
+            </div>
         </div>
     );
 };

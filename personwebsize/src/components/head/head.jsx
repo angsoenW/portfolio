@@ -10,10 +10,10 @@ const baseStyle = {
     alignItems: 'center',
     justifyContent: 'center',
     fontSize: '18px',
-    fontFamily: 'monospace', // 像素风格常用字体
-    border: '2px solid #3C9DB2', // 加边框来模仿像素风格
+    border: '2px solid rgb(163, 110, 43)', // 加边框来模仿像素风格
     backgroundColor: '#5E7C16', // 背景色：草绿色
-    boxShadow: '3px 3px 0 #8E8E86', // 简单的阴影来增加立体感
+    boxShadow: '3px 3px 0 #8E8E86', 
+        
 };
 
 const flexStyle = {
@@ -22,6 +22,7 @@ const flexStyle = {
     display: "flex",
     flexDirection: 'row',
     justifyContent: 'space-around',
+
 }
 
 const Head = () => {
