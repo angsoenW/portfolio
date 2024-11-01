@@ -1,0 +1,11 @@
+/* 确保 html 和 body 也占据 100% 的高度和宽度 */
+html, body {
+    height: 100%;
+    margin: 0; /* 去掉默认的边距 */
+}
+
+/* 设置 #root 占据整个页面 */
+#root {
+    height: 100%;
+    width: 100%;
+}
