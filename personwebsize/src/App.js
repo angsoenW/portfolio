@@ -1,6 +1,6 @@
 import React,{useState} from 'react';
 import Head from './components/head/head';
-import Content from './components/content/content';
+import Content from './components/content/content.jsx';
 import Footer from './components/footer/footer';
 import Item from './components/item/item' 
 
