@@ -1,55 +1,79 @@
-import React, { useEffect } from 'react';
-import { Typography } from 'antd';
+import React, { useState } from 'react';
+import { Typography, Image } from 'antd';
+import image from '../../image/personImage.png';
+import { DoubleLeftOutlined } from "@ant-design/icons";
+// eslint-disable-next-line
+import Item from '../item/item';
 
 const { Title, Paragraph } = Typography;
 
-// 背景色和图片
-const backgroundStyle = {
-    backgroundSize: 'cover', // 使背景图覆盖整个容器
-    backgroundPosition: 'center', // 背景图居中
-    padding: '50px 20px',
-    textAlign: 'center', // 文本居中
-    height: '100vh', // 使容器填满整个视口高度
+// 父元素样式
+const containerStyle = {
+    display: 'flex',
+    alignItems: 'center',
+    justifyContent: 'space-between',
+    padding: '50px 10%',
+    flexDirection: 'row-reverse', // 保持反转
+    position: 'relative', // 设置相对定位
+    maxWidth: '1200px', // 设置最大宽度
+    margin: '0 auto', // 居中容器
 };
 
 // 卡片样式
 const cardStyle = {
-    backgroundColor: 'rgba(255, 255, 255, 0.8)', // 半透明白色背景
-    borderRadius: '10px', // 圆角
+    backgroundColor: 'rgba(255, 255, 255, 0.8)',
+    borderRadius: '10px',
     padding: '20px',
-    margin: '10px auto',
-    maxWidth: '80%', // 最大宽度
-    boxShadow: '0 4px 15px rgba(0, 0, 0, 0.2)', // 阴影效果
+    maxWidth: '60%',
+    boxShadow: '0 4px 15px rgba(0, 0, 0, 0.2)',
 };
 
+// 图片样式
+const imageStyle = {
+    width: '80%',
+    height: "100%",
+    maxWidth: '600px',
+    borderRadius: '50%',
+    objectFit: 'cover',
+    marginLeft: "34%",
+};
 
-
+// 标题样式
 const titleStyle = {
-    color: '#003366',          // 深蓝色文本
-    margin: '0 0 10px',
-    fontFamily: '"Chakra Petch", sans-serif',  
-    fontOpticalSizing: 'auto',
+    color: '#003366',
+    fontFamily: '"Chakra Petch", sans-serif',
     fontWeight: 300,
-    fontStyle: 'normal'
 };
 
-
+// 文本样式
 const paragraphStyle = {
-    color: 'rgba(0, 51, 102, 0.8)', 
-    margin: '0 0 10px', 
+    color: 'rgba(0, 51, 102, 0.8)',
+    margin: '0 0 10px',
 };
 
 // 链接样式
 const linkStyle = {
-    color: '#FFA500', // 强调色：橙色
+    color: '#FFA500',
     textDecoration: 'none',
 };
 
-const Content = ({fontFamily}) => {
+// 图标样式
+const iconStyle = {
+    fontSize: '40px',
+    transform: 'translateX(-50%) rotate(-90deg)', // 翻转图片
+    position: 'absolute',
+    bottom: '-5%', // 间距
+    left: '50%',    // 水平居中
+    color: "#4999500"
+};
+
+
+const Content = ({ fontFamily }) => {
 
     return (
-        <div style={backgroundStyle}>
-            <div className='111' style={cardStyle}>
+        <div style={containerStyle} className='hero'>
+            <Image style={imageStyle} src={image} alt='personImage' />
+            <div style={cardStyle}>
                 <Title level={1} style={titleStyle}>
                     Hi! I am Suyanqa
                 </Title>
@@ -69,6 +93,7 @@ const Content = ({fontFamily}) => {
                     ⚡ Fun fact: I like to communicate with people, so that we can all gain experience from communication.
                 </Paragraph>
             </div>
+            <DoubleLeftOutlined style={iconStyle} />
         </div>
     );
 };

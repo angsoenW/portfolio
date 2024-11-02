@@ -1,0 +1,23 @@
+.feature-section {
+    opacity: 1;
+    transform: translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);
+    transform-style: preserve-3d;
+}
+
+.flex-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px; /* 根据需要调整 */
+}
+
+.feature-image-mask {
+    flex: 1;
+}
+
+.feature-image {
+    width: 100%;
+    max-width: 534px; /* 根据你的需求调整 */
+    height: auto;
+    border-radius: 10px; /* 可选：圆角效果 */
+}
