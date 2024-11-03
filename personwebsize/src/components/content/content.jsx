@@ -1,9 +1,8 @@
-import React, { useState } from 'react';
+import React from 'react';
 import { Typography, Image } from 'antd';
 import image from '../../image/personImage.png';
 import { DoubleLeftOutlined } from "@ant-design/icons";
-// eslint-disable-next-line
-import Item from '../item/item';
+import './index.css';
 
 const { Title, Paragraph } = Typography;
 

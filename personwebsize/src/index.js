@@ -15,12 +15,13 @@ root.render(
                     colorLink: '#73C2FB',         // 链接色：天空蓝
                     colorLinkHover: '#3C9DB2',    // 链接悬停色：水蓝色
                     colorBgBase: '#8E8E86',       // 背景色：石头灰
-                    colorTextBase: '#A36E2B',     // 文本色：土棕色
+                    colorTextBase: '#C5893D',     // 更亮的文本色：沙棕色
                 },
             }}
         >
             <App />
-        </ConfigProvider>
+    </ConfigProvider>
+
     </React.StrictMode>
 );
 

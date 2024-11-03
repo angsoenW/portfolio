@@ -1,11 +1,16 @@
-import React from 'react';
+import React, { useEffect } from 'react';
+import './index.css'; // 引入样式文件
 
-// Item 组件用于渲染经历
 const Item = ({ experiences }) => {
+    useEffect(() => {
+        console.log("experiences:", experiences);
+        console.log("Item count:", experiences.length);
+    }, [experiences]);
+
     return (
-        <div>
+        <div className="item-container">
             {experiences.map((experience, index) => (
-                <div key={index} style={styles.experienceBox}>
+                <div key={index} className="experience-box">
                     <h2>{experience.title}</h2>
                     {experience.location && <p><strong>Location:</strong> {experience.location}</p>}
                     {experience.date && <p><strong>Date:</strong> {experience.date}</p>}
@@ -25,8 +30,8 @@ const Item = ({ experiences }) => {
                             <ul>
                                 {experience.links.map((link, linkIndex) => (
                                     <li key={linkIndex}>
-                                        <a href={link} target="_blank" rel="noopener noreferrer">
-                                            {link}
+                                        <a href={link.url} target="_blank" rel="noopener noreferrer">
+                                            {link.text || "View Document"}
                                         </a>
                                     </li>
                                 ))}
@@ -37,17 +42,6 @@ const Item = ({ experiences }) => {
             ))}
         </div>
     );
-};
-
-// 样式对象（可以根据需要进行修改）
-const styles = {
-    experienceBox: {
-        border: '1px solid #ccc',
-        borderRadius: '5px',
-        padding: '16px',
-        margin: '16px 0',
-        backgroundColor: '#f9f9f9',
-    },
 };
 
 export default Item;

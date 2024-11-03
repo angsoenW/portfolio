@@ -1,5 +1,6 @@
 import React from 'react';
 import { Space } from 'antd';
+import './index.css';
 
 const baseStyle = {
     width: '100px',

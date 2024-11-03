@@ -10,7 +10,7 @@ const footerStyle = {
     color: '#F0E68C', // 文本色：淡黄色
     textAlign: 'center',
     padding: '20px 0',
-    position: 'absolute', // 让 footer 在页面底部
+    position: 'relative', // 让 footer 在页面底部
     bottom: 0,
     backgroundColor: '#161824', // 背景色
     borderTop: '4px solid #7d7a6e', // 边框
