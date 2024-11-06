@@ -228,7 +228,7 @@ const Home = ( ) => {
                 <Content fontFamily={fontFamily}/>
                 <Item experiences={experiences}/>
             </div>
-            <Footer fontFamily={fontFamily}/>
+            <Footer fontFamily={fontFamily} style={{position: 'relative'}}/>
         </div>
     )
 }

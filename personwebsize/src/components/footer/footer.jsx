@@ -4,16 +4,14 @@ import './index.css';
 
 const { Paragraph } = Typography;
 
-// 页脚样式
 const footerStyle = {
     width: '100%',
-    color: '#F0E68C', // 文本色：淡黄色
+    color: '#F0E68C',
     textAlign: 'center',
-    padding: '20px 0',
-    position: 'relative', // 让 footer 在页面底部
+    // position: 'fixed',
     bottom: 0,
-    backgroundColor: '#161824', // 背景色
-    borderTop: '4px solid #7d7a6e', // 边框
+    backgroundColor: '#1f3a1f',
+    borderTop: '4px solid #7d7a6e',
 };
 
 const Footer = ({ fontFamily }) => {

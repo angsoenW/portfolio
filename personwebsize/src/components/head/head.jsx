@@ -31,7 +31,7 @@ const flexStyle = {
 const workMenu = (
     <Menu className="project-father">
         <Menu.Item key="1" className="project">
-            <Link to="/project1">Project 1</Link>
+            <Link to="/project">My project details.</Link>
         </Menu.Item>
     </Menu>
 );

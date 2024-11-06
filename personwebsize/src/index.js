@@ -19,7 +19,7 @@ root.render(
                             colorPrimary: '#5E7C16',      // 主色：草绿色
                             colorLink: '#73C2FB',         // 链接色：天空蓝
                             colorLinkHover: '#3C9DB2',    // 链接悬停色：水蓝色
-                            colorBgBase: 'pink',       // 背景色：石头灰
+                            colorBgBase: '#167168170',       // 背景色：
                             colorTextBase: '#C5893D',     // 更亮的文本色：沙棕色
                         },
                     }}
