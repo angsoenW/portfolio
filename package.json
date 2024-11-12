@@ -16,7 +16,14 @@
     "install": "^0.13.0",
     "morgan": "~1.9.1",
     "npm": "^10.4.0",
-    "path": "^0.12.7"
+    "path": "^0.12.7",
+    "@testing-library/jest-dom": "^5.17.0",
+    "@testing-library/react": "^13.4.0",
+    "@testing-library/user-event": "^13.5.0",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "react-scripts": "5.0.1",
+    "web-vitals": "^2.1.4"
   },
   "description": "personal portfolio",
   "main": "app.js",
