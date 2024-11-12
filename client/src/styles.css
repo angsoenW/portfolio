@@ -57,7 +57,7 @@ body {
 /* Hero Section */
 .hero-section {
     height: 80vh;
-    background: url('pixel-hero-bg.png') no-repeat center center/cover;
+    /* background: url('pixel-hero-bg.png') no-repeat center center/cover; */
     display: flex;
     align-items: center;
     justify-content: center;
