@@ -229,6 +229,7 @@ const Home = ( ) => {
                 <Item experiences={experiences}/>
             </div>
             <Footer fontFamily={fontFamily} style={{position: 'relative'}}/>
+            {/** add ! in css if needed */}
         </div>
     )
 }
