@@ -10,6 +10,7 @@
     "heroku-postbuild": "npm run client-install && npm run client-build"
   },
   "dependencies": {
+    "antd": "^5.22.0",
     "debug": "~2.6.9",
     "dotenv": "^16.4.5",
     "express": "^4.19.2",
@@ -17,13 +18,9 @@
     "morgan": "~1.9.1",
     "npm": "^10.4.0",
     "path": "^0.12.7",
-    "@testing-library/jest-dom": "^5.17.0",
-    "@testing-library/react": "^13.4.0",
-    "@testing-library/user-event": "^13.5.0",
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
-    "react-scripts": "5.0.1",
-    "web-vitals": "^2.1.4"
+    "react-scripts": "5.0.1"
   },
   "description": "personal portfolio",
   "main": "app.js",

@@ -1,0 +1,31 @@
+html, body {
+    height: 100%;
+    margin: 0; 
+    font-family: 'Courier New', Courier, monospace; 
+    background-color: #0D0D0D; 
+    background-image: url("./image/background.png"); 
+    background-size: cover; 
+    background-position: center; 
+    background-repeat: repeat; 
+    color: #F0E68C; 
+    font-family: "Chakra Petch", sans-serif !important;
+    font-optical-sizing: auto !important;
+    font-weight: 300 !important;
+    font-style: normal !important;
+}
+
+#root {
+    height: 100%;
+    width: 100%;
+}
+
+* {
+    box-sizing: border-box; 
+}
+
+.centered {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}

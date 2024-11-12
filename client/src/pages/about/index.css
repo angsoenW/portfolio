@@ -1,0 +1,43 @@
+/* index.css */
+
+/* 统一设置字体 */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Chakra Petch', sans-serif; /* 全局字体 */
+    color: #A36E2B; /* 全局文本颜色 */
+}
+
+.outer-box {
+    padding: 20px;
+    width: 100%;
+    margin: auto;
+    display: flex; /* 使用flex布局 */
+    flex-direction: column; /* 纵向排列 */
+    min-height: 100vh; /* 最小高度为视口高度 */
+}
+
+.main-content {
+    flex-grow: 1; /* 占据可用空间 */
+}
+
+.footer {
+    width: 100%;
+    background-color: #f0f2f5; /* 页脚背景颜色 */
+    text-align: center; /* 文本居中 */
+    color: #5E7C16; /* 页脚文本颜色 */
+}
+
+/* 强调文本 */
+.highlight {
+    color: #F0E68C; /* 金色或亮黄色，用于强调文本 */
+}
+
+/* 链接颜色 */
+a {
+    color: #73C2FB; /* 天空蓝，链接颜色 */
+}
+
+a:hover {
+    color: #3C9DB2; /* 水蓝色，链接悬停颜色 */
+}
