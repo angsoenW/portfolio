@@ -2,7 +2,7 @@ import React from 'react';
 import { Typography, Image } from 'antd';
 import image from '../../image/personImage.png';
 import { DoubleLeftOutlined } from "@ant-design/icons";
-import './index.css';
+import './content.css';
 
 const { Title, Paragraph } = Typography;
 
@@ -20,11 +20,10 @@ const containerStyle = {
 
 // 卡片样式
 const cardStyle = {
-    backgroundColor: 'rgba(255, 255, 255, 0.8)',
     borderRadius: '10px',
     padding: '20px',
-    maxWidth: '60%',
-    boxShadow: '0 4px 15px rgba(0, 0, 0, 0.2)',
+    //maxWidth: '800px', // Increase the max-width to make the card bigger
+    width: '200%', // Ensure the card takes full width within the max-width
 };
 
 // 图片样式
@@ -72,7 +71,27 @@ const Content = ({ fontFamily }) => {
     return (
         <div style={containerStyle} className='hero'>
             <Image style={imageStyle} src={image} alt='personImage' />
-            <div style={cardStyle}>
+            <div className="glass-card" style={cardStyle} >
+                <Title level={1} style={titleStyle}>
+                    Hi! You've reached Shuoheng!
+                </Title>
+                {/* <Paragraph style={{ ...paragraphStyle, ...fontFamily }}>
+                    🌱 I’m currently learning and expanding my skills in Spring Boot and React to build robust and efficient web applications.
+                </Paragraph>
+                <Paragraph style={{ ...paragraphStyle, ...fontFamily }}>
+                    💞️ I’m looking to collaborate on projects involving Spring Boot or React development.
+                </Paragraph>
+                <Paragraph style={{ ...paragraphStyle, ...fontFamily }}>
+                    📫 You can reach me at <a href="mailto:suyan1254088@gmail.com" style={linkStyle}>suyan1254088@gmail.com</a>.
+                </Paragraph>
+                <Paragraph style={{ ...paragraphStyle, ...fontFamily }}>
+                    😄 Pronouns: ABC (Always Be Coding)
+                </Paragraph>
+                <Paragraph style={{ ...paragraphStyle, ...fontFamily }}>
+                    ⚡ Fun fact: I like to communicate with people, so that we can all gain experience from communication.
+                </Paragraph> */}
+            </div>
+            {/* <div style={cardStyle}>
                 <Title level={1} style={titleStyle}>
                     Hi! I am Suyanqa
                 </Title>
@@ -91,7 +110,7 @@ const Content = ({ fontFamily }) => {
                 <Paragraph style={{ ...paragraphStyle, ...fontFamily }}>
                     ⚡ Fun fact: I like to communicate with people, so that we can all gain experience from communication.
                 </Paragraph>
-            </div>
+            </div> */}
             <DoubleLeftOutlined style={iconStyle} />
         </div>
     );

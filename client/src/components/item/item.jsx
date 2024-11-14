@@ -1,5 +1,5 @@
 import React, { useEffect } from 'react';
-import './index.css'; // 引入样式文件
+import './item.css'; // 引入样式文件
 
 const Item = ({ experiences }) => {
     useEffect(() => {

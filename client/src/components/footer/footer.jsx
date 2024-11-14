@@ -1,6 +1,6 @@
 import React from 'react';
 import { Typography } from 'antd';
-import './index.css';
+import './footer.css';
 
 const { Paragraph } = Typography;
 

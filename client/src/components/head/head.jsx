@@ -1,7 +1,7 @@
 import React from 'react';
 import { Space, Dropdown, Menu } from 'antd';
 import { Link } from 'react-router-dom';
-import './index.css';
+import './head.css';
 
 const baseStyle = {
     width: '100px',
@@ -30,7 +30,8 @@ const workMenu = (
 
 const Head = () => {
     return (
-        <div className="head">
+        //  <div className="head">
+    <div className="glass-header">
             <Space className="head-content" direction="vertical" align="center">
                 <div className="name">
                     Shuoheng Wang
