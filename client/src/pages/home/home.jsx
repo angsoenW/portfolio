@@ -2,9 +2,10 @@ import Head from "../../components/head/head";
 import Content from "../../components/content/content";
 import Item from "../../components/item/item";
 import Footer from "../../components/footer/footer";
-import React from "react";
+import React, { useState, useEffect, useRef } from 'react'
+import WAVES from 'vanta/dist/vanta.waves.min'
 
-const Home = ( ) => {
+const Home = () => {
     // eslint-disable-next-line
     const experiences = [
         {
@@ -77,8 +78,8 @@ const Home = ( ) => {
                     text: "Bearly There"
                 },
                 {
-                    url:"https://github.com/angsoenW/BearlyThere",
-                    text:"demo level"
+                    url: "https://github.com/angsoenW/BearlyThere",
+                    text: "demo level"
                 }
             ]
         },
@@ -104,76 +105,76 @@ const Home = ( ) => {
                 "Integrated robust API functionality for seamless front-end and back-end operations, including user authentication and data storage.",
                 "Played a key role in user research and testing to ensure feature alignment with user needs."
             ],
-            links:[
+            links: [
                 {
-                    url:'https://ischool.uw.edu/capstone/projects/2024/what-you-got-left-recipe-generation-and-ingredient-tracking-website-help',
-                    text:'What You Got Left'
+                    url: 'https://ischool.uw.edu/capstone/projects/2024/what-you-got-left-recipe-generation-and-ingredient-tracking-website-help',
+                    text: 'What You Got Left'
                 },
                 {
                     url: 'https://test.jazelizer.me/',
-                    text:'Capstone Project'
+                    text: 'Capstone Project'
                 },
                 {
-                    url:'https://github.com/angsoenW/INFO_490_Capstone',
-                    text:'full-stack development'
+                    url: 'https://github.com/angsoenW/INFO_490_Capstone',
+                    text: 'full-stack development'
                 }
 
             ]
         },
         {
-            title:"Info314-TicTacToeRFC | Java",
-            date:"2023",
-            description:[
+            title: "Info314-TicTacToeRFC | Java",
+            date: "2023",
+            description: [
                 "Developed a command-line interface-based multiplayer Tic-Tac-Toe game adhering to specific RFC protocols.",
                 "Enhanced the game’s functionality by integrating network programming concepts and ensuring robust communication between players."
             ],
-            links:[
+            links: [
                 {
-                    url:'https://github.com/weifanwu/info314-TicTacToeRFC',
-                    text:'Info314-TicTacToeRFC'
+                    url: 'https://github.com/weifanwu/info314-TicTacToeRFC',
+                    text: 'Info314-TicTacToeRFC'
                 },
             ]
         },
         {
-            title:"Architecture Analysis on Material UI | Project Report",
-            date:"2023",
-            description:[
+            title: "Architecture Analysis on Material UI | Project Report",
+            date: "2023",
+            description: [
                 "Conducted an in-depth analysis of Material UI's architecture, focusing on development practices,application scenarios, and design patterns.",
                 "Identified performance enhancement opportunities, proposing targeted improvements that led toactionable recommendations for system optimization."
             ],
-            links:[
+            links: [
                 {
-                    url:'https://github.com/Info-443-Spring-2023/project-2-material-ui',
-                    text:'Architecture Analysis on Material UI'
+                    url: 'https://github.com/Info-443-Spring-2023/project-2-material-ui',
+                    text: 'Architecture Analysis on Material UI'
                 },
             ]
         },
         {
-            title:"SubMax: Final Design Document | Mobile Application Design",
-            date:"2023",
-            description:[
+            title: "SubMax: Final Design Document | Mobile Application Design",
+            date: "2023",
+            description: [
                 "Spearheaded the design and prototyping of SubMax, a mobile application aimed at optimizing subscription management for college students. ",
                 "Developed a comprehensive user interface using Figma, and streamlined the app's features to enhance user experience and cost management with a focus on data informativity and user interactivity. ",
                 "Identified user needs through research, ideating potential solutions, and outlining a clear development roadmap."
             ],
-            links:[
+            links: [
                 {
-                    url:'https://docs.google.com/document/d/1IGsILTTB3QvMQg5cQgvMlEWI9x1xfh76Y2kBDSjb00A/edit?usp=sharing',
-                    text:'SubMax: Final Design Document'
+                    url: 'https://docs.google.com/document/d/1IGsILTTB3QvMQg5cQgvMlEWI9x1xfh76Y2kBDSjb00A/edit?usp=sharing',
+                    text: 'SubMax: Final Design Document'
                 },
             ]
         },
         {
-            title:"iUW: Systems Analysis and Design Document | Product Development & Management Document",
-            date:"2023",
-            description:[
+            title: "iUW: Systems Analysis and Design Document | Product Development & Management Document",
+            date: "2023",
+            description: [
                 "Created a vision and scope document for an alumni information system, integrating enterprise architecture to improve alumni-student engagement. ",
                 "Led the design and implementation of the system's features, focusing on data management, user experience and stakeholder relationships."
             ],
-            links:[
+            links: [
                 {
-                    url:'https://docs.google.com/document/d/1KtJmlkBVM5BBNJNW3VBw2addbI2eETt4A74Fzf0wg_o/edit?usp=sharing',
-                    text:'iUW: Systems Analysis and Design Document'
+                    url: 'https://docs.google.com/document/d/1KtJmlkBVM5BBNJNW3VBw2addbI2eETt4A74Fzf0wg_o/edit?usp=sharing',
+                    text: 'iUW: Systems Analysis and Design Document'
                 },
             ]
         },
@@ -221,15 +222,38 @@ const Home = ( ) => {
         fontWeight: 300,
         fontStyle: 'normal'
     }
+
+    const [vantaEffect, setVantaEffect] = useState(null)
+    const myRef = useRef(null)
+    useEffect(() => {
+        if (!vantaEffect) {
+            setVantaEffect(WAVES({
+                el: myRef.current,
+                mouseControls: true,
+                touchControls: true,
+                gyroControls: false,
+                color: 0x75384,
+                shininess: 50.00,
+                waveHeight: 15.50,
+                waveSpeed: 0.80,
+                zoom: 0.5
+            }))
+        }
+        return () => {
+            if (vantaEffect) vantaEffect.destroy()
+        }
+    }, [vantaEffect])
+
     return (
-        <div className="app-container">
-            <Head/>
-            <div className="main-content">
-                <Content fontFamily={fontFamily}/>
-                <Item experiences={experiences}/>
+        <div className="vanta" ref={myRef}>
+            <div className="app-container">
+                <Head />
+                <div className="main-content">
+                    <Content fontFamily={fontFamily} />
+                    <Item experiences={experiences} />
+                </div>
+                <Footer fontFamily={fontFamily} style={{ position: 'relative' }} />
             </div>
-            <Footer fontFamily={fontFamily} style={{position: 'relative'}}/>
-            {/** add ! in css if needed */}
         </div>
     )
 }

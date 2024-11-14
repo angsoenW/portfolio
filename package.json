@@ -21,7 +21,9 @@
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
     "react-router-dom": "^6.28.0",
-    "react-scripts": "5.0.1"
+    "react-scripts": "5.0.1",
+    "three": "^0.170.0",
+    "vanta": "^0.5.24"
   },
   "description": "personal portfolio",
   "main": "app.js",
