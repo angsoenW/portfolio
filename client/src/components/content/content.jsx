@@ -75,7 +75,7 @@ const Content = ({ fontFamily }) => {
                 <Title level={1} style={titleStyle}>
                     Hi! You've reached Shuoheng!
                 </Title>
-                {/* <Paragraph style={{ ...paragraphStyle, ...fontFamily }}>
+                <Paragraph style={{ ...paragraphStyle, ...fontFamily }}>
                     🌱 I’m currently learning and expanding my skills in Spring Boot and React to build robust and efficient web applications.
                 </Paragraph>
                 <Paragraph style={{ ...paragraphStyle, ...fontFamily }}>
@@ -89,7 +89,7 @@ const Content = ({ fontFamily }) => {
                 </Paragraph>
                 <Paragraph style={{ ...paragraphStyle, ...fontFamily }}>
                     ⚡ Fun fact: I like to communicate with people, so that we can all gain experience from communication.
-                </Paragraph> */}
+                </Paragraph>
             </div>
             {/* <div style={cardStyle}>
                 <Title level={1} style={titleStyle}>
