@@ -1,23 +1,23 @@
 import React from 'react';
-import { Space, Dropdown, Menu } from 'antd';
+import { Dropdown, Menu } from 'antd';
 import { Link } from 'react-router-dom';
 import './head.css';
 
 const baseStyle = {
-    width: '100px',
     height: '40px',
-    margin: "10px",
-    color: 'var(--ant-primary-color)',
+    color: '#ffffff',
     display: 'flex',
     alignItems: 'center',
     justifyContent: 'center',
-    fontSize: '18px',
+    fontSize: '16px',
     fontWeight: 'bold',
     borderRadius: '8px',
-    border: '2px solid var(--ant-primary-color)',
-    backgroundColor: 'var(--ant-primary-color)',
-    boxShadow: '3px 3px 0 rgba(0, 0, 0, 0.2)',
     transition: 'all 0.3s ease',
+    backgroundColor: 'rgba(0, 51, 102, 0.85)',
+    border: 'none',
+    padding: '0 15px',
+    flexShrink: 1,
+    minWidth: 0,
 };
 
 const workMenu = (
@@ -30,34 +30,24 @@ const workMenu = (
 
 const Head = () => {
     return (
-        //  <div className="head">
-    <div className="glass-header">
-            <Space className="head-content" direction="vertical" align="center">
-                <div className="name">
-                    Shuoheng Wang
-                </div>
-
+        <div className="glass-header">
+            <div className="header-container">
+                <div className="name">Shuoheng Wang</div>
                 <div className="navbar">
-                    <Space size="middle">
-                        <Dropdown overlay={workMenu} placement="bottom">
-                            <div style={{ ...baseStyle, cursor: 'pointer' }}>
-                                Work
+                    <Dropdown overlay={workMenu} placement="bottom">
+                        <div style={{ ...baseStyle, cursor: 'pointer' }} className="navbar-button">
+                            Work
+                        </div>
+                    </Dropdown>
+                    {['About', 'Resume'].map((text, i) => (
+                        <Link to={`/${text.toLowerCase()}`} key={i}>
+                            <div style={baseStyle} className="navbar-button">
+                                {text}
                             </div>
-                        </Dropdown>
-                        {['About', 'Resume'].map((text, i) => (
-                            <Link to={`/${text.toLowerCase()}`} key={i}>
-                                <div style={{
-                                    ...baseStyle,
-                                    backgroundColor: i % 2 ? 'var(--ant-primary-color)' : 'var(--ant-color-link-hover)',
-                                    color: 'var(--ant-color-text-base)',
-                                }}>
-                                    {text}
-                                </div>
-                            </Link>
-                        ))}
-                    </Space>
+                        </Link>
+                    ))}
                 </div>
-            </Space>
+            </div>
         </div>
     );
 };

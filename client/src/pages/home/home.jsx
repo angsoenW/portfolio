@@ -246,8 +246,9 @@ const Home = () => {
 
     return (
         <div className="vanta" ref={myRef}>
+            
             <div className="app-container">
-                <Head />
+            <Head />
                 <div className="main-content">
                     <Content fontFamily={fontFamily} />
                     <Item experiences={experiences} />

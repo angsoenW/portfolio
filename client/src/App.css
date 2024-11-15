@@ -1,11 +1,11 @@
 .app-container {
-  display: flex;
+  width: 100%; /* Ensure it takes full width */
+  margin: 0 auto; /* Center the container */
   flex-direction: column;
-  min-height: 100vh; /* 确保占据全屏 */
+  min-height: 100vh; /* Ensure it takes full screen height */
 }
 
 .main-content {
-  flex: 1;
-  display: flex;
   flex-direction: column;
+  /* Adjust this value based on the height of your header */
 }
