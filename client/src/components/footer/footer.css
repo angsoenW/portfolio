@@ -1,19 +1,27 @@
 .footer {
+    background: rgba(255, 255, 255, 0.75);
+    border-radius: 15px 15px 0 0;
+    border-top: 1px solid rgba(200, 200, 200, 0.2);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    box-shadow: 0 -4px 15px rgba(0, 0, 0, 0.1);
+    padding: 10px;
+    position: absolute;
     width: 100%;
-    color: #F0E68C;
+    bottom: 0;
+    z-index: 1000;
+    box-sizing: border-box;
     text-align: center;
-    padding: 20px;
-    font-size: 0.8em;
-    background-color: #161824;
-    border-top: 4px solid #7d7a6e;
+    color: #333;
 }
 
 .footer a {
-    color: #ffd166;
+    color: #003366;
     text-decoration: none;
     margin: 0 10px;
+    font-weight: bold;
 }
 
 .footer a:hover {
-    color: #ff5733;
+    color: #00509e;
 }

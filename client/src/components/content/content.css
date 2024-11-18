@@ -3,8 +3,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 50px; /* Equal padding on all sides */
-    width: 100%;
+    padding: 20px; /* Equal padding on all sides */
     margin: 0 auto;
     min-height: 100vh; /* Takes up full viewport height */
     box-sizing: border-box;
@@ -12,43 +11,56 @@
 
 .glass-card {
     display: flex;
-    flex-direction: row; /* Align items horizontally */
-    align-items: center;
-    justify-content: space-between;
+    flex-direction: row; /* Keep items in a row */
+    align-items: center; /* Center items vertically */
+    justify-content: center; /* Center items horizontally if needed */
     background: rgba(255, 255, 255, 0.4);
-    border-radius: 15px;
-    padding: 20px; /* Equal padding on all sides */
     border: 1px solid rgba(255, 255, 255, 0.2);
     backdrop-filter: blur(8px);
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
-    width: 100%; /* Take up the full width of the container */
+    width: 100%;
+    height: 100%;
+    min-height: 100vh;
     box-sizing: border-box;
 }
 
+/* Adjust .text-content to center text vertically */
 .text-content {
-    max-width: 60%; /* Set a maximum width for the text content */
+    padding: 1%;
+    max-width: 58%;
     flex: 1;
+    display: flex; /* Enable flex layout */
+    flex-direction: column;
+    justify-content: center; /* Center text vertically */
 }
 
-.title {
-    color: #003366;
+h1:where(.css-dev-only-do-not-override-tpassh).ant-typography {
+    margin-bottom: 0.5em;
+    color: rgba(0, 0, 0, 0.88);
+    font-weight: 600;
+    font-size: 52px;
+    line-height: 1.2105263157894737;
     font-family: 'Chakra Petch', sans-serif;
-    font-weight: 300;
 }
 
-.paragraph {
-    color: rgba(0, 51, 102, 0.8);
-    line-height: 1.6;
-    margin: 20px 0; /* Space between paragraphs */
+div:where(.css-dev-only-do-not-override-tpassh).ant-typography, :where(.css-dev-only-do-not-override-tpassh).ant-typography p {
+    margin-bottom: 1em;
+    font-size: 1.1em;
+    line-height: 1.5;
+    color: #555;
+
+}
+
+.ant-image{
+    width: 38%;  
+    vertical-align: middle;
+    padding: 1%;
 }
 
 .profile-image {
-    width: 40%;
-    max-width: 400px;
     border-radius: 50%;
     object-fit: cover;
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
-    margin-left: 20px; /* Space between text and image */
 }
 
 /* Responsive styling */
@@ -66,6 +78,6 @@
     }
 
     .text-content {
-        max-width: 100%;
+        max-width: 90%;
     }
 }

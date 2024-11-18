@@ -7,8 +7,8 @@
 }
 
 .section-title {
-  font-size: 24px;
-  color: #003366;
+  font-size: 30px;
+  color: #ffbf1d;
   margin-bottom: 20px;
   border-bottom: 2px solid #003366;
   padding-bottom: 10px;
@@ -46,15 +46,17 @@
 .experience-box h3 {
   color: #333;
   margin-bottom: 10px;
+  font-size: 25px;
 }
 
 .experience-box p,
 .experience-box li {
-  color: #555;
+  color: #644b0d;
+  font-size: 20px;
 }
 
 .experience-box a {
-  color: #155cb3;
+  color: #ffbf1d;
   text-decoration: none;
 }
 

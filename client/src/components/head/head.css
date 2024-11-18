@@ -26,7 +26,7 @@
 }
 
 .name {
-    font-size: 26px;
+    font-size: 170%;
     font-weight: 600;
     color: #003366;
     flex-shrink: 0;
@@ -42,6 +42,7 @@
 
 .navbar a {
     text-decoration: none;
+    font-size: 200px
 }
 
 .navbar-button {

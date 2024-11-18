@@ -107,7 +107,7 @@ const Home = () => {
         fontFamily: '"Chakra Petch", sans-serif',
         fontOpticalSizing: 'auto',
         fontWeight: 300,
-        fontStyle: 'normal'
+        fontStyle: 'normal',
     }
 
     const [vantaEffect, setVantaEffect] = useState(null)
@@ -133,15 +133,14 @@ const Home = () => {
 
     return (
         <div className="vanta" ref={myRef}>
-
+            <Head />
             <div className="app-container">
-                <Head />
                 <div className="main-content">
                     <Content fontFamily={fontFamily} />
                     <Item experiences={experiences} />
                 </div>
-                <Footer fontFamily={fontFamily} style={{ position: 'relative' }} />
             </div>
+            <Footer fontFamily={fontFamily} style={{ position: 'relative' }} />
         </div>
     )
 }

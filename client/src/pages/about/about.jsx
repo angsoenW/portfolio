@@ -29,7 +29,7 @@ const About = () => {
                 shininess: 50.00,
                 waveHeight: 15.50,
                 waveSpeed: 0.80,
-                zoom: 0.5
+                zoom: 0.6
             }))
         }
         return () => {
