@@ -1,11 +1,13 @@
 .app-container {
-  width: 100%; /* Ensure it takes full width */
-  margin: 0 auto; /* Center the container */
+  background: transparent; /* Ensure no background color */
+  position: relative;
+  width: 100%;
+  margin: 0 auto;
   flex-direction: column;
-  min-height: 100vh; /* Ensure it takes full screen height */
+  min-height: 100vh;
 }
 
 .main-content {
-  flex-direction: column;
-  /* Adjust this value based on the height of your header */
+  position: relative;
+  z-index: 1; /* Above the Vanta canvas */
 }

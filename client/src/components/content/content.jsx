@@ -1,6 +1,6 @@
 import React from 'react';
 import { Typography, Image } from 'antd';
-import image from '../../image/personImage.png';
+import image from '../../image/IMG_0877.JPEG';
 import './content.css';
 
 const { Title, Paragraph } = Typography;

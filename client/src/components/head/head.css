@@ -10,6 +10,8 @@
     width: 100%;
     z-index: 1000;
     box-sizing: border-box;
+    top: 0;
+    /* Ensure the header is fixed to the top */
 }
 
 .header-container {
@@ -28,6 +30,7 @@
     font-weight: 600;
     color: #003366;
     flex-shrink: 0;
+    text-decoration: none;
 }
 
 .navbar {
@@ -35,6 +38,10 @@
     align-items: center;
     gap: 10px;
     flex-wrap: wrap;
+}
+
+.navbar a {
+    text-decoration: none;
 }
 
 .navbar-button {
@@ -65,15 +72,18 @@
         flex-direction: column;
         align-items: center;
     }
+
     .name {
         font-size: 20px;
         margin-bottom: 10px;
         text-align: center;
     }
+
     .navbar {
         justify-content: center;
         width: 100%;
     }
+
     .navbar-button {
         padding: 8px 12px;
         font-size: 14px;
