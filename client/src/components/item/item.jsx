@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+import React from 'react';
 import './item.css'; // 引入样式文件
 
 const Item = ({ experiences }) => {
