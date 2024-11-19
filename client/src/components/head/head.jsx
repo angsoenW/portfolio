@@ -35,11 +35,11 @@ const Head = () => {
       <div className="header-container">
         <Link to="/" className="name">Shuoheng Wang</Link>
         <div className="navbar">
-          <Dropdown menu={workMenu} placement="bottom">
+          <Link to="/work">
             <div style={{ ...baseStyle, cursor: 'pointer' }} className="navbar-button">
               Work
             </div>
-          </Dropdown>
+          </Link>
           {['About', 'Resume'].map((text, i) => {
             if (text === 'Resume') {
               return (

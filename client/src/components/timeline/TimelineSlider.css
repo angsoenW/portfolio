@@ -1,0 +1,56 @@
+.timeline-slider-container {
+    background: rgba(255, 255, 255, 0.4);
+    border-radius: 15px;
+    backdrop-filter: blur(8px);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    padding: 15px 20px;
+    margin-left: 20px; /* Equal padding on all sides */
+    margin-right: 20px; /* Equal padding on all sides */
+    box-sizing: border-box;
+}
+
+.timeline-title {
+    text-align: center;
+    font-size: 32px;
+    margin-bottom: 20px;
+    font-family: 'Chakra Petch', sans-serif;
+    color: #333; /* Title color */
+}
+
+.timeline-event {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.timeline-event h3 {
+    font-size: 28px;
+    color: #333; /* Title color */
+}
+
+.timeline-event ul {
+    list-style-type: disc;
+    margin-left: 40px;
+    padding: 0;
+}
+
+.timeline-event li {
+    font-size: 18px;
+    color: #886202; /* Body color */
+    margin-bottom: 10px;
+}
+
+.ant-slider-track {
+    background-color: #886202; /* Slider track color */
+}
+
+.ant-slider-handle {
+    border-color: #886202; /* Slider handle color */
+}
+
+.ant-slider-dot {
+    border-color: #886202; /* Slider dot color */
+}
+
+.ant-slider-mark-text {
+    color: #886202; /* Slider mark text color */
+}

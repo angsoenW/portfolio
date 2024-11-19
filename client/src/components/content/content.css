@@ -34,6 +34,13 @@
     justify-content: center; /* Center text vertically */
 }
 
+.title {
+    font-size: 2.5em;
+    font-weight: 600;
+    color: rgba(0, 0, 0, 0.88);
+    font-family: 'Chakra Petch', sans-serif;
+}
+
 h1:where(.css-dev-only-do-not-override-tpassh).ant-typography {
     margin-bottom: 0.5em;
     color: rgba(0, 0, 0, 0.88);

@@ -1,10 +1,7 @@
 body {
-    margin: 0;
-    padding: 0;
     font-family: 'Chakra Petch', sans-serif;
     font-size: 18px; /* Sets a base font size */
-    color: #644b0d;
-    background-color: #f9f9f9;
+    color: #886202;
 }
 
 .outer-box {
@@ -20,8 +17,6 @@ body {
     backdrop-filter: blur(8px);
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
     box-sizing: border-box;
-
-    /* Keep any existing styles from your original .outer-box */
     width: 85%;
     max-width: 1200px;
     margin: auto;
@@ -32,7 +27,7 @@ body {
 }
 
 div:where(.css-dev-only-do-not-override-tpassh).ant-typography{
-    color: #644b0d;
+    color: #886202;
 }
 
 .ant-typography h1,

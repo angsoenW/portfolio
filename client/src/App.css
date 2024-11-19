@@ -3,13 +3,17 @@
   position: relative;
   width: 100%;
   margin: 0 auto;
+  padding: 20px;
   flex-direction: column;
+  flex: 1 0 auto;
   min-height: 100vh;
   width: 75%;
-  max-width: 1500px;
+  max-width: 1400px;
+  box-sizing: border-box;
 }
 
 .main-content {
+  flex: 1;
   position: relative;
   z-index: 1; /* Above the Vanta canvas */
 }
