@@ -9,6 +9,7 @@
 - 手机端打开排版错误，CSS 修改。
 - 主页里板块边界不一样，有的白边明显有的没有白边，统一添加 border，以 `item.css` 为格式。
 - About 页面里 Fun Fact 字体和别处不同，请修改。
+- `npm run build`再 `npm start`之后，页面显示有些不同，比如主页的“Hi，You‘ve reached Shuoheng”卡片颜色丢失，方框也变得不圆润了， About里的字体颜色也丢失
 
 ## 已知需求
 
