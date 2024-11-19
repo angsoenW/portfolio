@@ -1,5 +1,4 @@
 import React from 'react';
-import { Dropdown } from 'antd';
 import { Link } from 'react-router-dom';
 import './head.css';
 
@@ -18,15 +17,6 @@ const baseStyle = {
   padding: '0 15px',
   flexShrink: 1,
   minWidth: 0,
-};
-
-const workMenu = {
-  items: [
-    {
-      key: '1',
-      label: <Link to="/project">My project details.</Link>,
-    },
-  ],
 };
 
 const Head = () => {
