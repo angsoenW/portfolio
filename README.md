@@ -1,6 +1,7 @@
 # 重要事项
 
 - 重要：不要更改程序架构，网站会在云端部署。加了依赖请告知。请务必在现有程序基础上开发。如果有任何困难请告知。
+- push和pull请在`liu`的分支上，禁止push在merge分支上。
 - 前端内容都在 Client 文件夹中，测试运行请输入 `npm start`（Terminal 须在 Client 文件夹目录中）。
 - 最终效果测试需要在 Client 文件夹的 Terminal 中输入 `npm run build`，然后在主目录 Terminal 中输入 `npm start`。
 
@@ -9,7 +10,7 @@
 - 手机端打开排版错误，CSS 修改。
 - 主页里板块边界不一样，有的白边明显有的没有白边，统一添加 border，以 `item.css` 为格式。
 - About 页面里 Fun Fact 字体和别处不同，请修改。
-- `npm run build`再 `npm start`之后，页面显示有些不同，比如主页的“Hi，You‘ve reached Shuoheng”卡片颜色丢失，方框也变得不圆润了， About里的字体颜色也丢失
+- `npm run build`再 `npm start`之后，页面显示有些不同，比如主页的“Hi，You‘ve reached Shuoheng”卡片颜色丢失，方框也变得不圆润了， About里的字体颜色也丢失。
 
 ## 已知需求
 
