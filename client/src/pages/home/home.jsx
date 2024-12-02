@@ -2,6 +2,7 @@ import Head from "../../components/head/head";
 import Content from "../../components/content/content";
 import Footer from "../../components/footer/footer";
 import TimelineSlider from '../../components/timeline/TimelineSlider';
+
 import React, { useState, useEffect, useRef } from 'react'
 import WAVES from 'vanta/dist/vanta.waves.min'
 
